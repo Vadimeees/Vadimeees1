@@ -1,0 +1,102 @@
+
+79038@DESKTOP-IOJL1K6 MINGW64 ~ (master)
+$ cd d:/git/
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git init
+Reinitialized existing Git repository in D:/git/.git/
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git clone https://github.com/libgit2/libgit2
+Cloning into 'libgit2'...
+remote: Enumerating objects: 119285, done.
+remote: Counting objects: 100% (119285/119285), done.
+remote: Compressing objects: 100% (32787/32787), done.
+remote: Total 119285 (delta 84643), reused 119124 (delta 84491), pack-reused 0
+Receiving objects: 100% (119285/119285), 61.24 MiB | 9.45 MiB/s, done.
+Resolving deltas: 100% (84643/84643), done.
+Updating files: 100% (11537/11537), done.
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git add 1
+fatal: pathspec '1' did not match any files
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git add .
+warning: adding embedded git repository: libgit2
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> libgit2
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached libgit2
+hint:
+hint: See "git help submodule" for more information.
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git status
+On branch Vetka1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   libgit2
+
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git config --global user.name "Vadimeees"
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git config --global user.email "vadimkashamanin@mail.ru"
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git commit -m "txt"
+[Vetka1 79a1736] txt
+ 1 file changed, 1 insertion(+)
+ create mode 160000 libgit2
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (Vetka1)
+$ git branch -m master
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (master)
+$ git remote add origin https://github.com/Vadimeees/Vadimeees1
+error: remote origin already exists.
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (master)
+$ git remote add origin https://github.com/Vadimeees/Vadimeees1.git
+error: remote origin already exists.
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (master)
+$ git remote add origin https://github.com/Vadimeees/Vadim.git
+error: remote origin already exists.
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (master)
+$ git bush -u origin master
+git: 'bush' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (master)
+$ git branch -M master
+
+79038@DESKTOP-IOJL1K6 MINGW64 /d/git (master)
+$ git remote add origin https://github.com/Vadimeees/Vadimeees1.git
+error: remote origin already exists.
